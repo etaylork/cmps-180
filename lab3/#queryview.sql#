@@ -1,0 +1,7 @@
+SELECT p.name, t.rent
+FROM Home_Landlords h, Persons p, Tenants t 
+WHERE h.SSN = p.SSN
+AND h.SSN = t.LeaseTenantSSN
+AND RentOverdue = TRUE;
+
+DELETE FROM TEn
